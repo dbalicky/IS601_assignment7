@@ -19,7 +19,7 @@ RUN useradd -m myuser && pip install --no-cache-dir -r requirements.txt && \
 COPY --chown=myuser:myuser . .
 
 # Switch to the 'myuser' user to run the application
-USER myuser
+# USER myuser
 
 # Use the Python interpreter as the entrypoint and the script as the first argument
 # This allows additional command-line arguments to be passed to the script via the docker run command
